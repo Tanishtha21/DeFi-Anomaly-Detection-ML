@@ -1,2 +1,5 @@
 # DeFi-Anomaly-Detection-ML
 n unsupervised ML pipeline utilizing VAEs and Ensemble Outlier Detection to identify malicious patterns in multichain DEX transactions.
+Decentralized Finance (DeFi) environments are characterized by high-entropy data and a significant lack of labeled fraudulent datasets. This research implements a robust, unsupervised anomaly detection framework to address the 'cold-start' problem in blockchain security. By processing over 55,000 transactions across multiple chains, the pipeline utilizes an ensemble of Isolation Forests (IF) and Local Outlier Factor (LOF) alongside a Variational Autoencoder (VAE).
+
+The core of the research focuses on Reconstruction Error Analysis; by training the VAE to learn the latent distribution of 'normal' transactions, we effectively isolate malicious interactions (such as flash-loan attacks) as high-loss outliers. The project concludes with a consensus heuristic that identified 236 high-confidence anomalies, demonstrating the efficacy of multi-model validation in trustless financial systems
